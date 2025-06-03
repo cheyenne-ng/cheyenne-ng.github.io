@@ -56,18 +56,33 @@
 
     <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div class="absolute inset-0 bg-black/30 z-10"></div>
-        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-chef-preparing-a-meal-in-the-kitchen-20739-large.mp4" type="video/mp4">
-        </video>
-        <div class="container mx-auto px-6 relative z-20 text-center">
-            <h1 class="text-5xl md:text-7xl font-display mb-4 text-white">Chef <span class="text-primary">Cheyenne</span></h1>
-            <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">Crafting culinary experiences with passion and precision</p>
-            <button onclick="scrollToSection('menu')" class="bg-primary hover:bg-accent text-white px-8 py-3 rounded-full font-medium transition-colors">
-                Explore My Menu
-            </button>
-        </div>
-    </section>
+    <!-- YouTube video background -->
+    <div class="absolute inset-0 w-full h-full z-0 overflow-hidden">
+        <iframe
+            class="w-full h-full object-cover"
+            src="https://www.youtube.com/embed/3iOLbfYmgdQ?autoplay=1&mute=1&controls=0&loop=1&playlist=3iOLbfYmgdQ&modestbranding=1&showinfo=0"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Overlay to darken video -->
+    <div class="absolute inset-0 bg-black/30 z-10"></div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-6 relative z-20 text-center">
+        <h1 class="text-5xl md:text-7xl font-display mb-4 text-white">
+            Chef <span class="text-primary">Cheyenne</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
+            Crafting culinary experiences with passion and precision
+        </p>
+        <button onclick="scrollToSection('menu')" class="bg-primary hover:bg-accent text-white px-8 py-3 rounded-full font-medium transition-colors">
+            Explore My Menu
+        </button>
+    </div>
+</section>
 
     <!-- Skills/Menu Section -->
     <section id="menu" class="py-20 bg-white dark:bg-slate-900">
@@ -209,13 +224,13 @@
                     <div class="mb-12 relative">
                         <div class="flex flex-col md:flex-row items-center">
                             <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
-                                <h3 class="text-xl font-bold">Executive Chef</h3>
-                                <p class="text-primary">La Belle Époque</p>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">2020 - Present</p>
+                                <h3 class="text-xl font-bold">Head Chef</h3>
+                                <p class="text-primary">Lares</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">2025 - Present</p>
                             </div>
                             <div class="hidden md:block w-8 h-8 rounded-full bg-primary absolute left-1/2 -translate-x-1/2 border-4 border-white dark:border-slate-900"></div>
                             <div class="md:w-1/2 md:pl-12">
-                                <p class="text-gray-600 dark:text-gray-300">Led kitchen operations for this Michelin-starred restaurant, developing seasonal tasting menus that increased revenue by 40%.</p>
+                                <p class="text-gray-600 dark:text-gray-300">Led kitchen operations for this school restaurant, developing seasonal tasting menus.</p>
                             </div>
                         </div>
                     </div>
@@ -223,13 +238,13 @@
                     <div class="mb-12 relative">
                         <div class="flex flex-col md:flex-row items-center">
                             <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-2 md:order-1">
-                                <p class="text-gray-600 dark:text-gray-300">Trained under Chef Pierre Dubois, specializing in modern French techniques while managing a team of 12 cooks.</p>
+                                <p class="text-gray-600 dark:text-gray-300">Trained under Chef Jimmy, specializing in modern French techniques while managing a team of 12 cooks.</p>
                             </div>
                             <div class="hidden md:block w-8 h-8 rounded-full bg-primary absolute left-1/2 -translate-x-1/2 border-4 border-white dark:border-slate-900"></div>
                             <div class="md:w-1/2 md:pl-12 order-1 md:order-2">
-                                <h3 class="text-xl font-bold">Sous Chef</h3>
-                                <p class="text-primary">Brasserie Lumière</p>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">2016 - 2020</p>
+                                <h3 class="text-xl font-bold">Chef</h3>
+                                <p class="text-primary">nanyang Polytechnic</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">2022 - present</p>
                             </div>
                         </div>
                     </div>
@@ -238,12 +253,12 @@
                         <div class="flex flex-col md:flex-row items-center">
                             <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
                                 <h3 class="text-xl font-bold">Pastry Chef</h3>
-                                <p class="text-primary">Pâtisserie Douceur</p>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">2013 - 2016</p>
+                                <p class="text-primary">Nanyang Polytechnic</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">2022 - present</p>
                             </div>
                             <div class="hidden md:block w-8 h-8 rounded-full bg-primary absolute left-1/2 -translate-x-1/2 border-4 border-white dark:border-slate-900"></div>
                             <div class="md:w-1/2 md:pl-12">
-                                <p class="text-gray-600 dark:text-gray-300">Created award-winning desserts and viennoiserie, increasing retail sales by 65% through innovative product development.</p>
+                                <p class="text-gray-600 dark:text-gray-300">Created traditional Chinese New Year Snacks.</p>
                             </div>
                         </div>
                     </div>
@@ -263,15 +278,15 @@
                         <div class="space-y-4">
                             <div class="flex items-center gap-4">
                                 <i class="fas fa-phone text-secondary"></i>
-                                <span>+1 (555) 123-4567</span>
+                                <span>+65 8133 7022</span>
                             </div>
                             <div class="flex items-center gap-4">
                                 <i class="fas fa-envelope text-secondary"></i>
-                                <span>chef@Cheyennecuisine.com</span>
+                                <span>cheyenne@gmail.com</span>
                             </div>
                             <div class="flex items-center gap-4">
                                 <i class="fas fa-map-marker-alt text-secondary"></i>
-                                <span>New York, NY</span>
+                                <span>Singapore</span>
                             </div>
                         </div>
                         <div class="mt-8 flex gap-4">
@@ -395,5 +410,4 @@
     </script>
 </body>
 </html>
- 
- 
+
